@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal2--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal3--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal4{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal4--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+
+.modal__container{
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 1em 3em;
+    display: inline-block;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.modal2__container{
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: inline-block;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.modal3__container{
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: inline-block;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.modal4__container{
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: inline-block;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.modal__title{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.modal__paragraph{
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.modal2__paragraph{
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.modal3__paragraph{
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.modal4__paragraph{
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.modal_buttons{
+    width: 100%;    
+    background: rgb(255, 255, 255);
+    border-top:rgb(255, 255, 255) 1px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.modal__close{
+
+    text-decoration: none;
+    color: #fff;
+    background-color: #088d30;
+    padding: 1em 4em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal__close2{
+
+    text-decoration: none;
+    color: #fff;
+    background-color: #ac1515;
+    padding: 1em 4em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal__close:hover{
+    color: #140b64;
+    background-color: #fff;
+}
+
+.modal__close2:hover{
+    color: #140b64;
+    background-color: #fff;
+}
+
+
+.close_modal{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close_modal:hover{
+    color: #bb1313;
+}
+
+.close3_modal{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close3_modal:hover{
+    color: #bb1313;
+}
+
+.close4_modal{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close4_modal:hover{
+    color: #bb1313;
+}
